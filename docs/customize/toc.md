@@ -218,13 +218,13 @@ a list of chapters. The title of each file will be the chapter's title.
 and decides how those sections should be nested according to the hierarchy of
 `_toc.yml` and the hierarchy of headers in a page. Within a file, the first
 `## ` header it discovers will define the top-most section in the file, and any subsequent
-`### ` headers underneath will be come sub-sections (until another `## ` section
+`### ` headers underneath will become sub-sections (until another `## ` section
 is encountered). This behavior is a bit different if the page is *nested* under
 another (see below).
 
 **Nested files define sections _underneath_ the last section of their parent**.
 If you specify sections that are *nested* under a file (with the `sections:` key)
-then those sections will begin will begin *underneath* the last headers of the parent page.
+then those sections will begin *underneath* the last headers of the parent page.
 
 For example, if your `_toc.yml` file looks like this:
 
